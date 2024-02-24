@@ -1,0 +1,1 @@
+# prints "Xyzzy". Assignment doesn't mutate original string

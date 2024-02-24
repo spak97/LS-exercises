@@ -1,0 +1,1 @@
+# method definitions are self contained and isolated outside in and vice versa so they cannot access variables outside of them and outside things cannot access variables only defined in the method.

@@ -1,0 +1,1 @@
+# a is not initialized outside of the block.
