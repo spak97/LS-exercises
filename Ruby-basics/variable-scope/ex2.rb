@@ -6,3 +6,5 @@ end
 
 my_value(a)
 puts a
+
+# same answer as last exercise. Method definitions are self contained.
