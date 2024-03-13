@@ -1,0 +1,1 @@
+puts "Teddy is #{Array(20..200).sample} years old!"
