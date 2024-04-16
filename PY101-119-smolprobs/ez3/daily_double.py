@@ -1,10 +1,7 @@
 def crunch(str):
-    listified = list(str)
-    for c in listified:
-        if listified.count(c) > 1:
-            listified.remove(c)
-    
-    return ''.join(listified)
+    index = 0
+    while index < len(str):
+        
 
 
 # These examples should all print True

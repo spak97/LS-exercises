@@ -1,7 +1,7 @@
 def twice(n):
-    listified = list(str(n))
-    list_reversed = listified[::-1]
-    if listified == list_reversed:
+    first_half = str(n)[:(len(str(n)) // 2)]
+    second_half = str(n)[(len(str(n)) // 2):]
+    if first_half == second_half:
         return n
     else:
         return n * 2
@@ -15,7 +15,3 @@ print(twice(103103) == 103103)          # True
 print(twice(3333) == 3333)              # True
 print(twice(7676) == 7676)              # True
 
-test = ['1', '1', '2']
-test2 = list(str(24234))
-test2.reverse()
-print(test)
