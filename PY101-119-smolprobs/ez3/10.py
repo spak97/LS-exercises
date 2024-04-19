@@ -6,7 +6,7 @@ def century(year):
     return cent
         
 
-        
+
 
 print(century(2000) == "20th")          # True
 print(century(2001) == "21st")          # True
