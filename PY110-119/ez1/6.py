@@ -2,24 +2,23 @@
 def strip(str):
     new_word = ""
     for c in str:
-        if c.isalpha:
+        if c.isalpha():
             new_word += c
     
-    print(new_word)
+    return new_word
 
 def word_sizes(str):
     words_list = str.split()
     res = {}
 
     for word in words_list:
-        print(strip(word))
         word_size = len(strip(word))
         if word_size not in res:
             res[word_size] = 0
         
         res[word_size] += 1
     
-    print(res) 
+    return res
 
 # All of these examples should print True
 
