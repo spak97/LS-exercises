@@ -24,7 +24,21 @@ Algo:
         - if input positive, add to 0
         - if neg, subtract from 1440
 """
+MINUTES_PER_DAY = 24 * 60
 
-def time_of_day(num):
-    day_in_mins = 24 * 60
-    time_in_mins = day_in_mins + num
+def format_time(hrs, mins):
+    return f"{hrs:02d}:{mins:02d}"
+
+def time_of_day(delta_mins):
+    delta_mins = delta_mins % MINUTES_PER_DAY
+    hrs = delta_mins // 60
+    mins = delta_mins % 60
+    return format_time(hrs, mins)
+
+print(time_of_day(0) == "00:00")        # True
+print(time_of_day(-3) == "23:57")       # True
+print(time_of_day(35) == "00:35")       # True
+print(time_of_day(-1437) == "00:03")    # True
+print(time_of_day(3000) == "02:00")     # True
+print(time_of_day(800) == "13:20")      # True
+print(time_of_day(-4231) == "01:29")    # True
